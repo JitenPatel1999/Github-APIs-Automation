@@ -1,22 +1,25 @@
-package POJO;
-
+package requestPOJO;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class DeleteRepository {
-	@JsonProperty(value= "owner")
-	public String owner;
+public class PostRepository {
+	@JsonProperty(value="name")
+	public String name;
 	
-	@JsonProperty(value="repo")
-	public String repo;
+	@JsonProperty(value="description")
+	public String description;
+	
+	@JsonProperty(value="homepage")
+	public String homepage;
+	
+	@JsonProperty(value="private")
+	public boolean isPrivate;
 }
