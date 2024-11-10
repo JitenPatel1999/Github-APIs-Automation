@@ -78,6 +78,11 @@
             <artifactId>org.everit.json.schema</artifactId>
             <version>1.3.0</version>
         </dependency>
+        <dependency>
+        	<groupId>com.automation</groupId>
+        	<artifactId>SeleniumFrameworkPOMCucumber</artifactId>
+        	<version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
     <build>
         <pluginManagement>
