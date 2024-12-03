@@ -3,21 +3,20 @@
   "type": "object",
   "properties": {
     "name": {
-      "type": "string",
-      "description": "The name of the repository"
+      "type": "string"
     },
     "description": {
-      "type": "string",
-      "description": "A description of the repository"
+      "type": "string"
     },
     "homepage": {
-      "type": "string",
-      "description": "The URL of the repository homepage"
+      "type": "string"
     },
     "private": {
-      "type": "boolean",
-      "description": "Indicates whether the repository is private"
-	  }
+      "type": "boolean"
+	},
+	"message":{
+	  "type": "string"
+	}
   },
   "required": [
     "name",

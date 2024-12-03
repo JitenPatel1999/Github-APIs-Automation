@@ -10,15 +10,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class PostRepository {
+public class GetRepositoryResponse {
 	@JsonProperty("id")
     private int id;
 
     @JsonProperty("name")
     private String name;
-
-    @JsonProperty("full_name")
-    private String fullName;
 
     @JsonProperty("description")
     private String description;
@@ -28,19 +25,4 @@ public class PostRepository {
 
     @JsonProperty("owner")
     private String owner;
-
-    @JsonProperty("html_url")
-    private String htmlUrl;
-
-    @JsonProperty("created_at")
-    private String createdAt;
-
-    @JsonProperty("updated_at")
-    private String updatedAt;
-
-    @JsonProperty("pushed_at")
-    private String pushedAt;
-
-    @JsonProperty("git_url")
-    private String gitUrl;
 }

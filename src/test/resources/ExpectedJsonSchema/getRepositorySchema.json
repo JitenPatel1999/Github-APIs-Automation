@@ -5,12 +5,24 @@
     "name": {
       "type": "string"
     },
+	"full_name":{
+		"type": "string"
+	},
     "description": {
       "type": "string"
     },
     "private": {
       "type": "boolean"
-    }
+    },
+	"type":{
+		"type":"string"
+	},
+	"message":{
+		"type": "string"
+	},
+	"default_branch":{
+		"type": "string"
+	}
   },
   "required": ["name", "private"],
   "additionalProperties": false

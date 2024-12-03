@@ -4,12 +4,16 @@
   "properties": {
     "owner": {
       "type": "string",
-      "description": "The owner of the repository (GitHub username or organization)"
     },
     "repo": {
       "type": "string",
-      "description": "The name of the repository to be deleted"
-    }
+    },
+	"body":{
+		"type": "string"
+	},
+	"message":{
+		"type": "string",
+	}
   },
   "required": [
     "owner",
